@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   FaBars,
   FaTimes,
@@ -7,12 +7,24 @@ import {
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.svg';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsLargeScreen(window.innerWidth >= 1024);
+  };
+
+  window.addEventListener('resize', handleResize);
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+}, []);
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
@@ -21,7 +33,7 @@ const Navbar = () => {
       </div>
 
       {/* menu */}
-      <ul className='hiddenh md:flex'>
+      <ul className={`${isLargeScreen ? 'flex' : 'hidden'}`}>
         <li>
           <Link to='home' smooth={true} duration={500}>
             Home
@@ -94,7 +106,7 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className='hiddenh lg:flex fixed flex-col top-[35%] left-0'>
+      <div className={`${isLargeScreen ? 'flex fixed flex-col top-[35%] left-0' : 'hidden'}`}>
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
