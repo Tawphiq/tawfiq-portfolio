@@ -44,7 +44,7 @@ const Skills = () => {
               </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 border border-pink-600 pt-4'>
                   <img className='w-20 mx-auto' src={Python} alt="HTML icon" />
-                  <p className='my-4'>Python</p>
+                  <p className='my-4'>PYTHON</p>
               </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 border border-pink-600 pt-4'>
                   <img className='w-44 mx-auto' src={Django} alt="HTML icon" />
