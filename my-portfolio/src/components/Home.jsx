@@ -20,8 +20,8 @@ const Home = () => {
 
         </p>
         <div>
-          <Link to='work' smooth={true} duration={500} className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 w-40 cursor-pointer'>
-            View Work
+          <Link to='work' smooth={true} duration={500} className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 w-1/2 md:w-1/5 cursor-pointer'>
+            View My Works
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3 ' />
             </span>

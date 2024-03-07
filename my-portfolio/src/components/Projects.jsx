@@ -1,7 +1,7 @@
 import { data } from "../data/data.js";
 
 
-const Work = () => {
+const Projects = () => {
 
     // projects file
     const project = data;
@@ -12,7 +12,7 @@ const Work = () => {
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
-            Work
+            Projects
           </p>
           <p className='py-6'>Check out some of my recent works</p>
         </div>
@@ -28,7 +28,7 @@ const Work = () => {
     className="shadow-lg shadow-[#040c16] group container rounded-md
               flex justify-center text-center items-center mx-auto content-div"
   >
-    
+
     {/* Hover effect for images */}
     <div className="opacity-0 group-hover:opacity-100 ">
       <span className="text-2xl font bold text-white tracking-wider ">
@@ -65,4 +65,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Projects;
