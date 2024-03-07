@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import {ReactTyped} from 'react-typed'
 
 
 const About = () => {
@@ -16,10 +17,7 @@ const About = () => {
           <div className='max-w-[1000px] w-full px-4'>
             <div>
               <p>
-              I am a passionate tech enthusiast and a Full Stack Developer with a strong foundation in various programming languages and web development frameworks. 
-              My skills and experience enable me to create robust and user-friendly applications that meet clients' needs effectively.
-              In addition to my technical skills, I am a dedicated problem-solver and a team player. I am always eager to take on new challenges and learn emerging technologies. I thrive in collaborative environments and value open communication to achieve project success.
-              If you are looking for a passionate Full Stack Developer who can bring creativity and technical expertise to your team, feel free to reach out. I am excited to contribute my skills and make a positive impact on your projects. Let's connect and explore potential opportunities together
+              <ReactTyped strings={["I am a passionate tech enthusiast and a Full Stack Developer with a strong foundation in various programming languages and web development frameworks. My skills and experience enable me to create robust and user-friendly applications that meet clients' needs effectively. In addition to my technical skills, I a a dedicated problem-solver and a team player. I am always eager to take on new challenges and learn emerging technologies. I thrive in collaborative environments and value open communication to achieve project success. If you are looking for a passionate Full Stack Developer who can bring creativity and technical expertise to your team, feel free to reach out. I am excited to contribute my skills and make a positive impact on your projects. Let's connect and explore potential opportunities together"]}/>
               </p>
             </div>
           </div>

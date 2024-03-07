@@ -25,7 +25,7 @@ const Home = () => {
         />
         </h2>
         <p className='text-[#8892b0] py-4 max-w-[700px] font-anta'>
-        I am a passionate tech enthusiast and a Full Stack Software Engineer with a strong foundation in various programming languages and web development frameworks.
+         I am a passionate tech enthusiast and a Full Stack Software Engineer with a strong foundation in various programming languages and web development frameworks.
          My skills and experience enable me to create robust and user-friendly applications that meet clients' needs effectively.
 
         </p>
