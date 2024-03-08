@@ -108,7 +108,7 @@ useEffect(() => {
       {/* Social icons */}
       <div className='flex fixed flex-col top-[35%] left-0'>
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center mr-[-100px] md:ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center md:mr-[-100px] md:ml-[-100px] md:hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='https://www.linkedin.com/in/mohammed-tawfiq-iddrisu-6469171b9/'
