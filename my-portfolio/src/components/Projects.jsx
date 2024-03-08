@@ -1,7 +1,11 @@
 import { data } from "../data/data.js";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Projects = () => {
+  useEffect(() => {AOS.init({duration: 2000})}, [])
 
     // projects file
     const project = data;
@@ -10,7 +14,7 @@ const Projects = () => {
   return (
     <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f] pt-40 pb-40'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
+        <div data-aos="flip-left" className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
             Projects
           </p>
@@ -18,7 +22,7 @@ const Projects = () => {
         </div>
 
 {/* container for projects */}
-<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+<div data-aos="fade-up" className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
 
           {/* Gird Item */}
           {project.map((item, index) => (

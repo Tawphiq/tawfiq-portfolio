@@ -1,16 +1,20 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import {ReactTyped} from 'react-typed'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {AOS.init({duration: 2000})}, [])
   return (
     <div name='home' className='w-full h-screen bg-[#0a192f]'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto px-4 flex flex-col justify-center h-full'>
         <p className='text-pink-600 font-anta text-xl'>Hi, my name is</p>
-        <h1  className='text-4xl sm:text-5xl font-bold font-anta text-[#ccd6f6]'>
+        <h1 data-aos="fade-left" className='text-4xl sm:text-5xl font-bold font-anta text-[#ccd6f6]'>
           MOHAMMED TAWFIQ IDDRISU
         </h1>
         <h2 className='text-4xl sm:text-5xl font-bold font-anta text-[#8892b0]'>

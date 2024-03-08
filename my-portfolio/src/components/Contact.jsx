@@ -1,11 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 const Contact = () => {
+  useEffect(() => {AOS.init({duration: 2000})}, [])
+
   return (
     <div name='contact' className='w-full h-screen bg-[#0a192f] flex justify-center px-4 items-center'>
         <form method='POST' action="https://getform.io/f/lakookxa" className='flex flex-col max-w-[600px] w-full'>
-            <div className='pb-8'>
+            <div data-aos="flip-left" className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300 font-anta'>Contact</p>
             </div>
             <input className='bg-[#ccd6f6] p-2 rounded-md font-anta outline-0' type="text" placeholder='Name' name='name' />
